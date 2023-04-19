@@ -5,6 +5,15 @@ body{
     box-sizing: border-box;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+body::-webkit-scrollbar {
+        width:12px;
+}
+body::-webkit-scrollbar-track {
+    background:rgb(3, 16, 59);
+}
+body::-webkit-scrollbar-thumb {
+    background: #0624a8;
+}
 :root {
     --background-color: #0624a8;
     --navbar-color: rgb(3, 16, 59);
@@ -23,6 +32,10 @@ body{
     flex-flow: column nowrap;
 }
 .header{
+    position:fixed;
+    z-index:999;
+    top:0px;
+    width:100vw;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
