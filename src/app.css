@@ -36,6 +36,10 @@ body{
     text-decoration: none;
     color: var(--text-navbar-color);
 }
+.header a:hover {
+    transition: 1s;
+    color:gold;
+}
 .normalCard{
     padding: 20px;
     color:var(--text-content-color);
@@ -49,6 +53,7 @@ body{
 .img{
     padding: 20px;
     margin:20px;
+    border-radius: 6px;
 }
 .color {
     color:var(--box-text-hl)
