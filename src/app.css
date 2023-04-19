@@ -6,17 +6,18 @@ body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 :root {
-    --background-color: #f5f5f5;
-    --navbar-color: rgb(5, 5, 180);
-    --text-content-color: #232323;
-    --text-navbar-color: rgb(231, 231, 15);
+    --background-color: #0624a8;
+    --navbar-color: rgb(3, 16, 59);
+    --text-content-color: #ece5e5;
+    --text-navbar-color: rgb(224, 224, 224);
     --box-color:var(--navbar-color);
     --box-text-hl:var(--text-navbar-color);
     --box-text-content-color:var(--background-color);
     --widht-page: 100vw;
 }
 .box {
-    height:120vh;
+    background:var(--background-color);
+    height:100%;
     width:auto;
     display: flex;
     flex-flow: column nowrap;
@@ -37,6 +38,7 @@ body{
 }
 .normalCard{
     padding: 20px;
+    color:var(--text-content-color);
 }
 .hightlightCard{
     padding: 20px;
@@ -62,7 +64,7 @@ body{
 .images{
     width: 300px;
     border-radius:8px;
-    border:1px solid silver;
+    border:1px solid goldenrod;
     filter:contrast(120%);
 }
 .images:hover {
