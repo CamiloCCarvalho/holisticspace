@@ -2,21 +2,37 @@ import './app.css'
 
 function App() {
   
+  function active(element:HTMLButtonElement):any{
+    if(element.children[0].classList.contains('active')){
+      element.children[0].classList.remove('active')
+    } else {
+      element.children[0].classList.add('active')
+    }
+  }
   return (
     <main className="container-fluid box">
       <nav className="navbar header">
-          <a className="navbar-brand" href="#">
+        <button onClick={(e) => {active(e.currentTarget)}}className="btn-nav-item">
+          <a href="#" className="">
             Espaço Holistico
           </a>
-          <a className="navbar-brand" href="#">
+        </button>
+        <button onClick={(e) => {active(e.currentTarget)}}className="btn-nav-item">
+          <a href="#">
             Inicio
           </a>
-          <a className="navbar-brand" href="#">
+        </button>
+        <button onClick={(e) => {active(e.currentTarget)}}className="btn-nav-item">
+          <a href="#">
             Sobre
           </a>
-          <a className="navbar-brand" href="#">
+        </button>
+        <button onClick={(e) => {active(e.currentTarget)}}className="btn-nav-item">
+          <a href="#">
             Contato
           </a>
+        </button>
+          
       </nav>
 
       <div className="normalCard">

@@ -32,9 +32,21 @@ body{
     gap: 20px;
     padding-left:20px;
 }
+.btn-nav-item {
+    background:none;
+    border:none;
+    font-size:1.0rem;
+    color: #f5f5f5;
+}
+.btn-nav-item:hover{
+    transition: 1s;
+    color:gold;
+}
+.active {
+    color:gold;
+}
 .header a {
     text-decoration: none;
-    color: var(--text-navbar-color);
 }
 .header a:hover {
     transition: 1s;
