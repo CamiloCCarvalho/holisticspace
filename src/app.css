@@ -41,16 +41,31 @@ body{
 .hightlightCard{
     padding: 20px;
     box-sizing: border-box;
-    background: blue;
-    color:#f5f5f5;
+    background:var(--navbar-color);
+    color:var(--background-color);
 }
 .img{
     padding: 20px;
     margin:20px;
 }
+.color {
+    color:var(--box-text-hl)
+}
 .footer{
     margin-top:120px;
-    background:green;
+    background:var(--navbar-color);
     height:100px;
     text-align: center;
+    color: var(--background-color);
+}
+
+.images{
+    width: 300px;
+    border-radius:8px;
+    border:1px solid silver;
+    filter:contrast(120%);
+}
+.images:hover {
+    filter:contrast(130%);
+    scale:102%;
 }
