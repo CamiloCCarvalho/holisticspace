@@ -4,11 +4,23 @@ import App from './App'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 
+import HomePage from './routes/Home'
+
+
 const routers = createBrowserRouter([
   {
     path:'/',
     element: <App />,
-    children: []
+    children: [
+      {
+        path:'/',
+        element: <HomePage />
+      },
+      {
+        path:'/sobre',
+        element: <p>text</p>
+      }
+    ]
   }
 ])
 
