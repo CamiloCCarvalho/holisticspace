@@ -1,12 +1,12 @@
-import React from 'react'
+// imports
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
-
+// routes
 import HomePage from './routes/Home'
 
-
+// routes-outlet-component
 const routers = createBrowserRouter([
   {
     path:'/',
@@ -25,7 +25,5 @@ const routers = createBrowserRouter([
 ])
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
     <RouterProvider router={routers} />
-  </React.StrictMode>,
 )
