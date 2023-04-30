@@ -2,13 +2,13 @@ export default {
     title: 'light',
 
     colors: {
-        primary: '#0FA3B1', //blue
-        secundary: '#0FA3B1', //blue
+        primary: '#0B409C', //blue
+        secundary: '#10316B', //blue-dark
 
-        background: '#f5f5f5', //White
-        textNav: '#f5f5f5', //White
-        highlight: '#0FA3B1', //blue
-        text: '#191919', //white
+        background: '#F2F7FF', //White
+        text: '#191919', //black
+        bg_nav: '#10316B', //blue-dark
+        text_nav: '#FFE867', //
     },
 }
     
